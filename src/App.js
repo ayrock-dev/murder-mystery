@@ -1,5 +1,5 @@
 import React, { PureComponent, Fragment } from 'react';
-import AppCanvas from './AppCanvas';
+import StarryCanvas from './StarryCanvas';
 import HomeHero from './HomeHero';
 import Moon from './Moon';
 import Clouds from './Clouds';
@@ -11,7 +11,7 @@ class App extends PureComponent {
                 <HomeHero />
                 <Moon />
                 <Clouds />
-                <AppCanvas />
+                <StarryCanvas />
             </Fragment>
         );
     }

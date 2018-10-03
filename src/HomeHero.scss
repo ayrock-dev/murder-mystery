@@ -2,6 +2,7 @@
     font-size: 4em;
     font-family: $spooky-font;
     color: $primary;
+    overflow: hidden;
 
     h1 {
         display: inline-block;
@@ -20,9 +21,13 @@
     .home-hero-title {
         display: block;
         position: relative;
-        width: 6.75em;
-        height: 1.35em;
+        width: 6.6em;
+        height: 1.25em;
         margin-top: -0.25em;
+
+        @media screen and (max-width: 650px) {
+            font-size: 42px;
+        }
     }
 
     .home-hero-title span {

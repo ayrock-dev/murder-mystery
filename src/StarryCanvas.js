@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import Particle from './Particle';
 import { lineToAngle, randomRange, degreesToRads } from './Helpers';
 
-export default class AppCanvas extends PureComponent {
+export default class StarryCanvas extends PureComponent {
     constructor(props) {
         super(props);
 
@@ -22,13 +22,13 @@ export default class AppCanvas extends PureComponent {
             ],
             starsAngle: 145,
             shootingStarSpeed: {
-                min: 15,
-                max: 20
+                min: 5,
+                max: 12
             },
             shootingStarOpacityDelta: 0.01,
             trailLengthDelta: 0.01,
             shootingStarEmittingInterval: 2000,
-            shootingStarLifeTime: 500,
+            shootingStarLifeTime: 350,
             maxTrailLength: 300,
             starBaseRadius: 2,
             shootingStarRadius: 3,
@@ -83,8 +83,8 @@ export default class AppCanvas extends PureComponent {
             const layer = layers[j];
             for (let i = 0; i < layer.count; i += 1) {
                 var star = new Particle(
-                    randomRange(0, width),
-                    randomRange(0, height),
+                    randomRange(0, width + 50),
+                    randomRange(-50, height),
                     0,
                     0
                 );

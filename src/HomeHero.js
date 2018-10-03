@@ -20,7 +20,7 @@ class HomeHero extends PureComponent {
             <div className="hero is-fullheight home-hero">
                 <div className="hero-body">
                     <div className="container">
-                        <div className="columns is-centered">
+                        <div className="columns is-mobile is-centered">
                             <h1 className="column is-narrow">
                                 <span className="home-hero-subtitle">
                                     {PRE_TITLE}
@@ -31,7 +31,7 @@ class HomeHero extends PureComponent {
                                 />
                             </h1>
                         </div>
-                        <div className="columns is-centered">
+                        <div className="columns is-mobile is-centered">
                             <div className="column is-narrow">
                                 <div className="field is-grouped">
                                     <div className="control">

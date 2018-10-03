@@ -1,73 +1,94 @@
-.cloud-container {
-    .cloud {
-        background: #fff;
-        height: 4em;
-        width: 9em;
-        border-radius: 3em;
-        position: absolute;
-        animation-name: clouds;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-    .cloud:before,
-    .cloud:after {
-        content: '';
-        background: #fff;
-        position: absolute;
-        border-radius: 50%;
-    }
-    .cloud:before {
-        height: 3em;
-        width: 3em;
-        top: -1.3em;
-        left: 1.1em;
-    }
-    .cloud:after {
-        height: 5em;
-        width: 5em;
-        top: -2em;
-        right: 0.85em;
-    }
-    .cloud:nth-child(1) {
-        top: 2em;
-        left: 10em;
-        animation-duration: 90s;
-    }
-    .cloud:nth-child(2) {
-        top: 9em;
-        left: 2.5em;
-        opacity: 0.45;
-        animation-duration: 120s;
-    }
-    .cloud:nth-child(3) {
-        top: 15em;
-        left: 11em;
-        opacity: 0.65;
-        animation-duration: 70s;
-    }
-    .cloud:nth-child(4) {
-        top: 7em;
-        left: 40em;
-        opacity: 0.65;
-        animation-duration: 70s;
-    }
-    .cloud:nth-child(5) {
-        top: 17em;
-        left: 30em;
-        opacity: 0.25;
-        animation-duration: 70s;
-    }
+$cloud-width: 15%;
 
-    @keyframes clouds {
-        0% {
-            margin-left: -10%;
-            opacity: 0;
+.cloud-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    .cloud-container {
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        pointer-events: none;
+
+        .cloud {
+            background: #fff;
+            width: $cloud-width;
+            border-radius: 20% / 50%;
+            position: absolute;
+            pointer-events: none;
+            left: -$cloud-width;
+
+            .cloud-inner {
+                width: 100%;
+                padding-bottom: 50%;
+
+                &:before,
+                &:after {
+                    background: #fff;
+                    position: absolute;
+                    border-radius: 50%;
+                    content: '';
+                }
+
+                &:before {
+                    height: 75%;
+                    width: 40%;
+                    margin-top: -10%;
+                    margin-left: 10%;
+                }
+
+                &:after {
+                    height: 100%;
+                    width: 50%;
+                    margin-top: -25%;
+                    margin-left: 40%;
+                }
+            }
         }
-        15% {
-            opacity: 100%;
+        .cloud:nth-child(1) {
+            top: 8%;
+            opacity: 0.25;
+            animation: clouds 90s 4s infinite linear,
+                cloudsFadeIn 2s 4s ease-in-out;
         }
-        100% {
-            margin-left: 110%;
+        .cloud:nth-child(2) {
+            top: 30%;
+            opacity: 0.45;
+            animation: clouds 120s 8s infinite linear,
+                cloudsFadeIn 2s 8s ease-in-out;
+        }
+        .cloud:nth-child(3) {
+            top: 4%;
+            opacity: 0.25;
+            animation: clouds 70s 1s infinite linear,
+                cloudsFadeIn 10s 1s ease-in-out;
+        }
+        .cloud:nth-child(4) {
+            top: 17%;
+            opacity: 0.45;
+            animation: clouds 70s infinite linear, cloudsFadeIn 10s ease-in-out;
+        }
+        .cloud:nth-child(5) {
+            top: 26%;
+            opacity: 0.25;
+            animation: clouds 70s 4s infinite linear,
+                cloudsFadeIn 10s 4s ease-in-out;
+        }
+
+        @keyframes clouds {
+            0% {
+                opacity: 0;
+                left: -$cloud-width;
+            }
+            100% {
+                opacity: 100%;
+                left: 100% + $cloud-width;
+            }
         }
     }
 }
