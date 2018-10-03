@@ -9,38 +9,30 @@ $handwritten-font: 'Shadows Into Light', cursive;
 
 // Update Bulma's global variables
 $family-sans-serif: lato, sans-serif;
-$body-rendering: auto;
+$body-rendering: initial;
 $primary: #63127d;
-$grey-dark: $dark;
-$link: $primary;
+$text: #fff;
+$text-light: #fff;
+$text-strong: #fff;
+$title-color: $primary;
+$link: $secondary;
+$link-hover: #fff;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
+$body-background-color: $dark;
+$footer-background-color: $primary;
+$box-background-color: rgba($secondary, 0.8);
 
 // Bulma
 @import '~bulma/bulma';
 
 // Globals
-html {
-    @media screen and (min-width: 650px) {
-        font-size: 20px;
-    }
-}
+@import './styles/globals';
+@import './styles/zIndex';
 
-html,
-body,
-#root {
-    min-height: 100%;
-    width: 100%;
-}
-
-body {
-    background-color: $dark;
-    background-image: url('https://i.imgur.com/Jjo6cJZ.png');
-}
-
-// Files
+// App
 @import './StarryCanvas';
 @import './Clouds';
 @import './Moon';
 @import './HomeHero';
-@import './ZIndex';
+@import './HeaderCard';

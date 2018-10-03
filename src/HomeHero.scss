@@ -1,36 +1,40 @@
 .home-hero {
-    font-size: 4em;
-    font-family: $spooky-font;
-    color: $primary;
     overflow: hidden;
 
     h1 {
         display: inline-block;
     }
 
-    .home-hero-subtitle {
+    .sign-up {
+        animation: fadeIn 3s 5s ease-out both;
+    }
+
+    .super-subtitle {
         display: block;
         font-family: $family-sans-serif;
-        font-size: 0.25em;
         font-weight: 400;
         letter-spacing: 0.1em;
         color: #75ffd1;
         text-transform: uppercase;
+        animation: fadeIn 3s ease-out both;
     }
 
-    .home-hero-title {
+    .super-title {
         display: block;
         position: relative;
         width: 6.6em;
         height: 1.25em;
         margin-top: -0.25em;
+        font-size: 4em;
+        font-family: $spooky-font;
+        color: $primary;
 
         @media screen and (max-width: 650px) {
             font-size: 42px;
         }
     }
 
-    .home-hero-title span {
+    .super-title span {
         position: absolute;
         display: block;
     }
@@ -40,7 +44,7 @@
         top: 0;
         left: 0;
         color: #a7ff91;
-        animation: bounce-in 1000ms linear both;
+        animation: bounce-in 1000ms 3000ms linear both;
     }
     .char2 {
         font-size: 0.75em;
@@ -48,7 +52,7 @@
         left: 1.25em;
         color: #a6ffaa;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 300ms;
+        animation-delay: 3300ms;
     }
     .char3 {
         font-size: 0.65em;
@@ -56,15 +60,15 @@
         top: 0.25em;
         color: #8cffbc;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 500ms;
+        animation-delay: 3500ms;
     }
     .char4 {
         font-size: 0.85em;
         left: 2.25em;
         top: 0.25em;
         color: #a7ff91;
-        animation: bounce-in 1000ms 200ms linear both,
-            swivel 9500ms 1200ms reverse linear infinite;
+        animation: bounce-in 1000ms 3200ms linear both,
+            swivel 9500ms 3200ms reverse linear infinite;
         transform-origin: 50% 0%;
     }
     .char5 {
@@ -73,7 +77,7 @@
         top: 0.5em;
         color: #a6ffaa;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 250ms;
+        animation-delay: 3250ms;
     }
     .char6 {
         font-size: 0.9em;
@@ -81,7 +85,7 @@
         top: 0.05em;
         color: #8cffbc;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 800ms;
+        animation-delay: 3800ms;
     }
     .char7 {
         font-size: 1.15em;
@@ -89,7 +93,7 @@
         top: -0.01em;
         color: #a7ff91;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 700ms;
+        animation-delay: 3700ms;
     }
     .char8 {
         font-size: 0.75em;
@@ -97,7 +101,7 @@
         top: 0.25em;
         color: #a6ffaa;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 1100ms;
+        animation-delay: 3100ms;
     }
     .char9 {
         font-size: 0.76em;
@@ -105,15 +109,15 @@
         top: 0.29em;
         color: #8cffbc;
         animation: bounce-in 1000ms linear both;
-        animation-delay: 400ms;
+        animation-delay: 3400ms;
     }
     .char10 {
         font-size: 0.96em;
         top: -0.08em;
         left: 5.72em;
         color: #a7ff91;
-        animation: bounce-in 1000ms 1500ms linear both,
-            swivel 8s 2500ms linear infinite;
+        animation: bounce-in 1000ms 3500ms linear both,
+            swivel 8s 3500ms linear infinite;
         transform-origin: 50% 100%;
     }
     .char11 {
@@ -121,7 +125,16 @@
         left: 8.68em;
         top: 0.25em;
         color: #a6ffaa;
-        animation: bounce-in 1000ms 1300ms linear both;
+        animation: bounce-in 1000ms 3300ms linear both;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

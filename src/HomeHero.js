@@ -1,53 +1,37 @@
 import React, { PureComponent } from 'react';
 import Lettering from './Lettering';
+import HeaderCard from './HeaderCard';
 
-const PRE_TITLE = 'Murder Mystery at';
+const PRE_TITLE = 'Murder Mystery on';
 const TITLE = 'CEDAR GROVE';
 
 class HomeHero extends PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.goToSignUp = this.goToSignUp.bind(this);
-    }
-
-    goToSignUp() {
-        window.open('https://goo.gl/forms/BCij5svd2iAvqZXT2', '_blank');
-    }
-
     render() {
         return (
-            <div className="hero is-fullheight home-hero">
+            <section className="hero is-fullheight home-hero">
                 <div className="hero-body">
                     <div className="container">
-                        <div className="columns is-mobile is-centered">
-                            <h1 className="column is-narrow">
-                                <span className="home-hero-subtitle">
-                                    {PRE_TITLE}
-                                </span>
-                                <Lettering
-                                    className="home-hero-title"
-                                    text={TITLE}
-                                />
-                            </h1>
+                        <div className="columns is-centered">
+                            <div className="column is-mobile is-narrow">
+                                <h1>
+                                    <span className="super-subtitle">
+                                        {PRE_TITLE}
+                                    </span>
+                                    <Lettering
+                                        className="super-title"
+                                        text={TITLE}
+                                    />
+                                </h1>
+                            </div>
                         </div>
-                        <div className="columns is-mobile is-centered">
-                            <div className="column is-narrow">
-                                <div className="field is-grouped">
-                                    <div className="control">
-                                        <button
-                                            className="button is-link"
-                                            onClick={this.goToSignUp}
-                                        >
-                                            Sign Up
-                                        </button>
-                                    </div>
-                                </div>
+                        <div className="columns is-centered">
+                            <div className="column is-full-mobile is-half-desktop">
+                                <HeaderCard className="sign-up" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
