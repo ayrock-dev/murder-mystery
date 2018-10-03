@@ -16,7 +16,7 @@ $cloud-width: 15%;
         pointer-events: none;
 
         .cloud {
-            background: #fff;
+            background: $white;
             width: $cloud-width;
             border-radius: 20% / 50%;
             position: absolute;
@@ -29,7 +29,7 @@ $cloud-width: 15%;
 
                 &:before,
                 &:after {
-                    background: #fff;
+                    background: $white;
                     position: absolute;
                     border-radius: 50%;
                     content: '';

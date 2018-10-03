@@ -1,27 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
 
-// Project variables
-$secondary: #50ccaa;
-$dark: #170535;
-$spooky-font: 'Emilys Candy', cursive;
-$handwritten-font: 'Shadows Into Light', cursive;
-
 // Update Bulma's global variables
-$family-sans-serif: lato, sans-serif;
-$body-rendering: initial;
-$primary: #63127d;
-$text: #fff;
-$text-light: #fff;
-$text-strong: #fff;
-$title-color: $primary;
-$link: $secondary;
-$link-hover: #fff;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-$body-background-color: $dark;
-$footer-background-color: $primary;
-$box-background-color: rgba($secondary, 0.8);
+@import './styles/vars';
 
 // Bulma
 @import '~bulma/bulma';
@@ -31,8 +12,8 @@ $box-background-color: rgba($secondary, 0.8);
 @import './styles/zIndex';
 
 // App
-@import './StarryCanvas';
-@import './Clouds';
-@import './Moon';
-@import './HomeHero';
-@import './HeaderCard';
+@import './components/StarryCanvas';
+@import './components/Clouds';
+@import './components/Moon';
+@import './components/HomeHero';
+@import './components/HeaderCard';

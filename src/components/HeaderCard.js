@@ -21,7 +21,7 @@ export default class HeaderCard extends PureComponent {
                 <h3 className="title">
                     Nov 3<sup>rd</sup>
                 </h3>
-                <button className="button is-primary" onClick={this.goToSignUp}>
+                <button className="button is-info" onClick={this.goToSignUp}>
                     Sign Up
                 </button>
             </div>
