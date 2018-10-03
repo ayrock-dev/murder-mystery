@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+
+// Project variables
+$secondary: #50ccaa;
+$dark: #170535;
+$spooky-font: 'Emilys Candy', cursive;
+$handwritten-font: 'Shadows Into Light', cursive;
+
+// Update Bulma's global variables
+$family-sans-serif: lato, sans-serif;
+$body-rendering: auto;
+$primary: #63127d;
+$grey-dark: $dark;
+$link: $primary;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Bulma
+@import '~bulma/bulma';
+
+// Globals
+html {
+    @media screen and (min-width: 650px) {
+        font-size: 20px;
+    }
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $dark;
+    background-image: url('https://i.imgur.com/Jjo6cJZ.png');
+}
+
+// Files
+@import './AppCanvas';
+@import './Clouds';
+@import './Moon';
+@import './HomeHero';
+@import './ZIndex';
