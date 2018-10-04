@@ -7,8 +7,11 @@ export default class HomeTaglineSection extends PureComponent {
                 <div className="container">
                     <h3 className="title has-text-light">Murder is Afoot</h3>
                     <p>
-                        The groundskeeper found the pool boy murdered in cold blood. 
-                        Nonetheless, the Duke's Banquetmust go on.
+                        The groundskeeper found the pool boy murdered in cold
+                        blood. Nonetheless, the Duke's Banquetmust go on.
+                        <br />
+                        <br />
+                        Can you figure out who did it?
                     </p>
                 </div>
             </section>
