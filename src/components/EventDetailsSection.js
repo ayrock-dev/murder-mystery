@@ -24,6 +24,10 @@ export default class EventDetailsSection extends PureComponent {
                                 Eagan, MN 55122
                             </p>
                         </div>
+                        <div className="column">
+                            <h3 className="is-size-4">Dress</h3>
+                            <p>Eccentric Victorian Formal</p>
+                        </div>
                     </div>
                 </div>
             </section>

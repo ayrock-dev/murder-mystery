@@ -26,10 +26,11 @@ export default class EventRulesSection extends PureComponent {
                     <p>
                         Attend as any character you like, as long as such an
                         individual is tidy enough for the dinner attire —{' '}
-                        <strong>Eccentric Victorian ormal</strong>. The Duke
+                        <strong>Eccentric Victorian Formal</strong>. The Duke
                         himself will be in top hat and cane. What other
                         characters might make an appearance? Perhaps a bloody
-                        butcher. Family members of the estate.
+                        butcher. Family members of the estate. Romantic partners
+                        of the Duke.
                     </p>
                     <h3 className="is-size-4">Event Updates</h3>
                     <p>
