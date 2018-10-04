@@ -5,10 +5,18 @@ export default class HeaderCard extends PureComponent {
         super(props);
 
         this.goToSignUp = this.goToSignUp.bind(this);
+        this.goToFbEvent = this.goToFbEvent.bind(this);
     }
 
     goToSignUp() {
         window.open('https://goo.gl/forms/BCij5svd2iAvqZXT2', '_blank');
+    }
+
+    goToFbEvent() {
+        window.open(
+            'https://www.facebook.com/events/239440540081107',
+            '_blank'
+        );
     }
 
     render() {
@@ -23,6 +31,15 @@ export default class HeaderCard extends PureComponent {
                 </h3>
                 <button className="button is-info" onClick={this.goToSignUp}>
                     Sign Up
+                </button>
+                <button
+                    className="button is-facebook"
+                    onClick={this.goToFbEvent}
+                >
+                    <span className="icon is-medium">
+                        <i class="fab fa-facebook" />
+                    </span>{' '}
+                    <span>Event</span>
                 </button>
             </div>
         );

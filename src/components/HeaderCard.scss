@@ -2,4 +2,8 @@
     .title {
         color: $white;
     }
+
+    button:not(:last-child) {
+        margin-right: 15px;
+    }
 }

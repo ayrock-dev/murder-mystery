@@ -8,3 +8,21 @@ html {
 .title {
     font-family: $spooky-font;
 }
+
+$facebook-blue: #3b5998;
+
+button {
+    &.is-facebook {
+        background: $facebook-blue;
+        border-color: $facebook-blue;
+        color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken($facebook-blue, 15%);
+            border-color: darken($facebook-blue, 15%);
+            color: $white;
+        }
+    }
+}

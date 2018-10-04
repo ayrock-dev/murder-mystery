@@ -8,10 +8,10 @@ export default class HomeTaglineSection extends PureComponent {
                     <h3 className="title has-text-light">Murder is Afoot</h3>
                     <p>
                         The groundskeeper found the pool boy murdered in cold
-                        blood. Nonetheless, the Duke's Banquetmust go on.
+                        blood. Nonetheless, the Duke's Banquet must go on.
                         <br />
                         <br />
-                        Can you figure out who did it?
+                        Can <i>you</i> figure out who did it?
                     </p>
                 </div>
             </section>
