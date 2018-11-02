@@ -3,7 +3,15 @@
         color: $white;
     }
 
-    button:not(:last-child) {
+    div:first-child > button:not(:last-child) {
         margin-right: 15px;
+    }
+
+    > div {
+        margin-bottom: 15px;
+    }
+
+    .centered-input {
+        justify-content: center;
     }
 }

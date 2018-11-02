@@ -1,28 +1,17 @@
-import React, { PureComponent, Fragment } from 'react';
-import StarryCanvas from './StarryCanvas';
-import HomeHero from './HomeHero';
-import HomeTaglineSection from './HomeTaglineSection';
-import EventDetailsSection from './EventDetailsSection';
-import EventRulesSection from './EventRulesSection';
-import SignatureSection from './SignatureSection';
-import Footer from './Footer';
-import Moon from './Moon';
-import Clouds from './Clouds';
+import React, { PureComponent } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import CharacterPage from './CharacterPage';
 
 class App extends PureComponent {
     render() {
         return (
-            <Fragment>
-                <HomeHero />
-                <HomeTaglineSection />
-                <EventDetailsSection />
-                <EventRulesSection />
-                <SignatureSection />
-                <Footer />
-                <Moon />
-                <Clouds />
-                <StarryCanvas />
-            </Fragment>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/:id" component={CharacterPage} />
+                </Switch>
+            </Router>
         );
     }
 }

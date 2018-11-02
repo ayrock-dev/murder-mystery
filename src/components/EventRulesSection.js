@@ -22,21 +22,50 @@ export default class EventRulesSection extends PureComponent {
                         The night's itinerary includes dinner, games, and
                         bustling conversationn — among <i>other</i> things.
                     </p>
-                    <h3 className="is-size-4">Costumes</h3>
                     <p>
-                        Attend as any character you like, as long as such an
-                        individual is tidy enough for the dinner attire —{' '}
-                        <strong>Eccentric Victorian Formal</strong>. The Duke
-                        himself will be in top hat and cane. What other
-                        characters might make an appearance? Perhaps a bloody
-                        butcher. Family members of the estate. Romantic partners
-                        of the Duke.
+                        You are about to become a suspect in a murder mystery.
+                        It is up to you to figure out "whodunit" by denouncing
+                        the guilty secrets of others while trying to prove your
+                        innocence.
                     </p>
-                    <h3 className="is-size-4">Event Updates</h3>
-                    <p>
-                        You poor soul, I know you'll be back. As more clues,
-                        characters, and secrets are revealed on this website!
-                    </p>
+                    <h3 className="is-size-4">How To Play</h3>
+                    <div className="content">
+                        <ul>
+                            <li>Attend!</li>
+                            <li>Read your clues and character description.</li>
+                            <li>
+                                Please remain in character throughout the game.
+                            </li>
+                            <li>The game will take part in three Acts.</li>
+                            <li>
+                                The murderer(s) will not know that he or she is
+                                the murderer. Thus, all players should suspect
+                                even themselves.
+                            </li>
+                            <li>
+                                Some of your clues will come in sealed
+                                envelopes. Events throughout the night will
+                                always be accompanied by symbols appearing on a
+                                sign. If you see a symbol that matches a sealed
+                                envelope you have, open it!
+                            </li>
+                            <li>
+                                SHARE YOUR CLUES! During the games, talk to
+                                everyone! See what clues they know, what their
+                                alibi might be, who they think is the murderer!
+                                Talk about your clues through the entire event.
+                                The more people you talk to, the more likely you
+                                will be to solve the mystery!
+                            </li>
+                            <li>
+                                Before the final submission (which you will
+                                write on a notecard and put in a box), all
+                                guests will be allowed to share an accusation.
+                                For each unique accusation, the suspect may
+                                share their defense.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         );
