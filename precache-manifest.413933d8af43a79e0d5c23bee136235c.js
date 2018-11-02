@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/murder-mystery/static/js/runtime~main.591f15a0.js"
   },
   {
-    "revision": "f59239b0cbf7650a9520",
-    "url": "/murder-mystery/static/js/main.f59239b0.chunk.js"
+    "revision": "de7d4bd7f7931e38bcaa",
+    "url": "/murder-mystery/static/js/main.de7d4bd7.chunk.js"
   },
   {
     "revision": "692b03d13cadcf6a70e1",
     "url": "/murder-mystery/static/js/1.692b03d1.chunk.js"
   },
   {
-    "revision": "f59239b0cbf7650a9520",
+    "revision": "de7d4bd7f7931e38bcaa",
     "url": "/murder-mystery/static/css/main.90ac04fe.chunk.css"
   },
   {
-    "revision": "74a87a6c6a7ab6bf13917ad434c36375",
+    "revision": "f46b5f4288fc420f887a2e6e4b7a3f51",
     "url": "/murder-mystery/index.html"
   }
 ];
