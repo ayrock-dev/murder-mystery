@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/murder-mystery/precache-manifest.b3f86ecbe538938d8eeb4dba6fd121c4.js"
+  "/murder-mystery/precache-manifest.b77fe145cb1b911584ed2f895aff3a3f.js"
 );
 
 workbox.clientsClaim();

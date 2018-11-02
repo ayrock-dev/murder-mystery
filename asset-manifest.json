@@ -1,13 +1,14 @@
 {
-  "main.css": "/murder-mystery/static/css/main.5dfdabf5.chunk.css",
-  "main.js": "/murder-mystery/static/js/main.62940b9a.chunk.js",
-  "main.js.map": "/murder-mystery/static/js/main.62940b9a.chunk.js.map",
-  "static/js/1.6a46c4d6.chunk.js": "/murder-mystery/static/js/1.6a46c4d6.chunk.js",
-  "static/js/1.6a46c4d6.chunk.js.map": "/murder-mystery/static/js/1.6a46c4d6.chunk.js.map",
+  "main.css": "/murder-mystery/static/css/main.cc0451aa.chunk.css",
+  "main.js": "/murder-mystery/static/js/main.ec2210f5.chunk.js",
+  "main.js.map": "/murder-mystery/static/js/main.ec2210f5.chunk.js.map",
+  "static/js/1.692b03d1.chunk.js": "/murder-mystery/static/js/1.692b03d1.chunk.js",
+  "static/js/1.692b03d1.chunk.js.map": "/murder-mystery/static/js/1.692b03d1.chunk.js.map",
   "runtime~main.js": "/murder-mystery/static/js/runtime~main.591f15a0.js",
   "runtime~main.js.map": "/murder-mystery/static/js/runtime~main.591f15a0.js.map",
-  "static/css/main.5dfdabf5.chunk.css.map": "/murder-mystery/static/css/main.5dfdabf5.chunk.css.map",
+  "static/media/bg.png": "/murder-mystery/static/media/bg.d91f0018.png",
+  "static/css/main.cc0451aa.chunk.css.map": "/murder-mystery/static/css/main.cc0451aa.chunk.css.map",
   "index.html": "/murder-mystery/index.html",
-  "precache-manifest.b3f86ecbe538938d8eeb4dba6fd121c4.js": "/murder-mystery/precache-manifest.b3f86ecbe538938d8eeb4dba6fd121c4.js",
+  "precache-manifest.b77fe145cb1b911584ed2f895aff3a3f.js": "/murder-mystery/precache-manifest.b77fe145cb1b911584ed2f895aff3a3f.js",
   "service-worker.js": "/murder-mystery/service-worker.js"
 }
