@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/murder-mystery/precache-manifest.8b68dd82c3394aae009fc3c3ba828cfd.js"
+  "/murder-mystery/precache-manifest.0a2e8c0f7848f1ab65b1c897b26bd558.js"
 );
 
 workbox.clientsClaim();
