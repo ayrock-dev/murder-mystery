@@ -36,7 +36,9 @@ export default class HeaderCard extends PureComponent {
         const code = e.target.code.value;
         if (code) {
             const cleanCode = encodeURIComponent(code.toLowerCase().trim());
-            this.setState({ redirectTo: `/${cleanCode}` });
+            this.setState({
+                redirectTo: `${process.env.PUBLIC_URL}/character/${cleanCode}`
+            });
         }
     }
 

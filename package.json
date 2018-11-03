@@ -2,7 +2,7 @@
     "name": "murder-mystery",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://ayrock-dev.github.io/murder-mystery",
+    "homepage": "https://ayrock-dev.github.io/murder-mystery/",
     "dependencies": {
         "bulma": "^0.7.1",
         "gh-pages": "^2.0.0",

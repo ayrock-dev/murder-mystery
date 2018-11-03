@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
 import data from '../data.json';
 import bg from '../bg.png';
@@ -24,7 +24,7 @@ class CharacterPage extends PureComponent {
         const { char } = this.state;
 
         if (!char) {
-            return <Redirect to={'/?e=invalid'} />;
+            return <Redirect to={`${process.env.PUBLIC_URL}/?e=invalid`} />;
         }
 
         return (
@@ -51,12 +51,47 @@ class CharacterPage extends PureComponent {
                     </section>
                     <div className="content-wrapper">
                         <section className="section">
-                            <div
-                                className="content"
-                                dangerouslySetInnerHTML={createMarkup(
-                                    char.content
-                                )}
-                            />
+                            {char.premise && (
+                                <Fragment>
+                                    <h2 className="title">Premise</h2>
+                                    <div
+                                        className="content"
+                                        dangerouslySetInnerHTML={createMarkup(
+                                            char.premise
+                                        )}
+                                    />
+                                </Fragment>
+                            )}
+                            {char.whoYouAre && (
+                                <Fragment>
+                                    <h2 className="title">Who You Are</h2>
+                                    <h3 className="subtitle">
+                                        Use this information to introduce
+                                        yourself
+                                    </h3>
+                                    <div
+                                        className="content"
+                                        dangerouslySetInnerHTML={createMarkup(
+                                            char.whoYouAre
+                                        )}
+                                    />
+                                </Fragment>
+                            )}
+                            {char.secrets && (
+                                <Fragment>
+                                    <h2 className="title">Your Darker Side</h2>
+                                    <h3 className="subtitle">
+                                        Keep this information secret until you
+                                        see fit
+                                    </h3>
+                                    <div
+                                        className="content"
+                                        dangerouslySetInnerHTML={createMarkup(
+                                            char.secrets
+                                        )}
+                                    />
+                                </Fragment>
+                            )}
                         </section>
                     </div>
                 </div>

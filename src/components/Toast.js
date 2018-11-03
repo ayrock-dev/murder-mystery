@@ -5,7 +5,7 @@ class Toast extends PureComponent {
         return (
             <div className="global-toast notification is-danger">
                 <button className="delete" onClick={this.props.close} />
-                Could not find any character for that code word.
+                Could not find any character for that character code.
             </div>
         );
     }

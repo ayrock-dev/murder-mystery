@@ -12,7 +12,7 @@ class HomeHero extends PureComponent {
                 <div className="hero-body">
                     <div className="container">
                         <div className="columns is-centered">
-                            <div className="column is-mobile is-narrow">
+                            <div className="column is-mobile is-narrow has-text-centered">
                                 <h1>
                                     <span className="super-subtitle">
                                         {PRE_TITLE}

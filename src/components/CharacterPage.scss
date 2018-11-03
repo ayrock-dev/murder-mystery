@@ -47,9 +47,6 @@ $char-bg-black: #010101;
         background: $turquoise;
 
         @media screen and (min-width: $tablet) {
-            position: absolute;
-            top: 0;
-            left: 0;
             background: $char-bg-black;
         }
     }
@@ -70,6 +67,13 @@ $char-bg-black: #010101;
             position: absolute;
             top: 15px;
             left: 15px;
+        }
+    }
+
+    section {
+        .subtitle,
+        .title {
+            color: white;
         }
     }
 }

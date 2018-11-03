@@ -7,6 +7,11 @@
     top: 1em;
     right: 1em;
     animation: moonlight 5s alternate infinite;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 11px;
+    }
+
     li {
         position: absolute;
         list-style: none;

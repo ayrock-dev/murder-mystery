@@ -8,8 +8,15 @@ class App extends PureComponent {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/" component={HomePage} />
-                    <Route path="/:id" component={CharacterPage} />
+                    <Route
+                        exact
+                        path={`${process.env.PUBLIC_URL}/`}
+                        component={HomePage}
+                    />
+                    <Route
+                        path={`${process.env.PUBLIC_URL}/character/:id`}
+                        component={CharacterPage}
+                    />
                 </Switch>
             </Router>
         );
