@@ -1,6 +1,6 @@
 function Stripe() {
   return (
-    <div className="absolute left-1/2 right-1/2 w-full h-full bg-primary scale-y-[2.6] skew-y-[-10deg] md:skew-y-[-6deg] translate-x-[-50%] translate-y-[12%] md:translate-y-[22%]" />
+    <div className="absolute left-1/2 right-1/2 w-full h-full bg-accent scale-y-[2.6] skew-y-[-10deg] md:skew-y-[-6deg] translate-x-[-50%] translate-y-[12%] md:translate-y-[22%]" />
   );
 }
 
