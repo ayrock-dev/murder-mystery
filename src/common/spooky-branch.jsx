@@ -1,16 +1,11 @@
-import clsx from 'clsx';
-
 import SpookySpider from './spooky-spider';
 
 export default function SpookyBranch({ className }) {
   return (
-    <div className={clsx('', className)}>
+    <div className={className}>
       <div className="relative">
-        <img src="spooky-branch.png" />
-        <SpookySpider
-          className="absolute transform"
-          style="left: 175px; top: 188px;"
-        />
+        <SpookySpider className="absolute left-[175px] top-[188px] transform" />
+        <img className="transform" src="spooky-branch.png" />
       </div>
     </div>
   );

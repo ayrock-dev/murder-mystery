@@ -21,15 +21,25 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      animation: {
+        spider: 'spider 6s ease-in-out',
+      },
+      colors: {
+        ...buildPalette(),
+      },
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
         serif: ['Abril Fatface', ...defaultTheme.fontFamily.serif],
       },
-      colors: {
-        ...buildPalette(
-          'https://coolors.co/541388-d90368-f1e9da-2e294e-ffd400'
-        ),
-      },
+      keyframes: {
+        spider: {
+          '0%': { height: '20px' },
+          '20%': { height: '120px' },
+          '30%': { height: '100px' },
+          '50%': { height: '200px' },
+          '100%': { height: '90px'},
+        }
+      }
     },
   },
   plugins: [],
